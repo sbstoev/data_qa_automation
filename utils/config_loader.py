@@ -1,3 +1,6 @@
+''' This class loads a configuration from JSON to a dictionary. 
+Probably it can be directly applied in the DatabaseManager class'''
+
 import json
 
 class ConfigLoader:

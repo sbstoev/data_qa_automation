@@ -1,3 +1,5 @@
+'''This class manages database connections and operations.'''
+
 import psycopg2
 
 class DatabaseManager:
@@ -8,7 +10,7 @@ class DatabaseManager:
 
     def connect(self):
         try:
-            self.connection = psycopg2.connect(**self.config)
+            self.connection = psycopg2.connect(**self.config) # the ** means Take dictionary values and pass them as arguments(value) to parameters(key). As many key-values as you want.
             print("Database connection established")
             return self.connection
         except Exception as e:
